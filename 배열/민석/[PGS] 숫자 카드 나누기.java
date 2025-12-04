@@ -3,19 +3,12 @@ class Solution {
     public int solution(int[] arrayA, int[] arrayB) {
         int answer = 0;
         
-        //철수부터 찾자
-        // arrayA를 다 돌면서 이중반복문으로 찾으면 시간초과아님 ?
-        //길이가 500000인데 원소가 100000000까지 되서 안될거같으넫
-        Arrays.sort(arrayA);
-       
         int bigA = arrayA[0];
         for(int i = 1 ; i<arrayA.length;i++){
             bigA = gongyaksoo(bigA,arrayA[i]);
             
         }
-        
-        Arrays.sort(arrayB);
-        
+    
         int bigB = arrayB[0];
         for(int i = 1 ; i<arrayB.length;i++){
             bigB = gongyaksoo(bigB,arrayB[i]);
