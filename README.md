@@ -479,17 +479,17 @@ Yejin / 코테를 위한 알고리즘 / 그리디 / 5문제
     </td>
     <td align="center">
       <a href="https://github.com/lcw-l-c-w">
-        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/30bdd0aa-c60d-4d69-8d01-58a10a7b49b4" />
+        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/30bdd0aa-c60d-4d69-8d01-58a10a7b49b4" /><br />
         <sub><b>채원</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/10"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/SSjunn">
-        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2294540a-8fd3-405c-8c6b-6397b17e5672" />
+        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2294540a-8fd3-405c-8c6b-6397b17e5672" /><br />
         <sub><b>성준</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/10"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/jms0324">
-        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/60c3d8ab-af5c-4dea-941a-c72c2314b864" />
+        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/60c3d8ab-af5c-4dea-941a-c72c2314b864" /><br />
         <sub><b>민석</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/10"/></a><br />
     </td>
     <td align="center">
@@ -499,7 +499,7 @@ Yejin / 코테를 위한 알고리즘 / 그리디 / 5문제
     </td>
     <td align="center">
       <a href="https://github.com/euiseon5895">
-        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/95757f6c-d0ef-46c1-92d0-6bfab2f9f30e" /> 
+        <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/95757f6c-d0ef-46c1-92d0-6bfab2f9f30e" /> <br />
         <sub><b>의선</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/10"/></a><br />
     </td>
   </tr>
