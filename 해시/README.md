@@ -158,10 +158,86 @@ import java.util.HashMap;
 ### Map 정렬
 
 * key 기준 정렬
+    * **TreeMap**  
+    HashMap은 순서를 보장하지 않지만, TreeMap은 키(Key)를 기준으로 자동으로 정렬된 Map을 제공
+    ```java
+    Map<String, Integer> map = new HashMap<>();
+    map.put("apple", 3);
+    map.put("banana", 2);
+    map.put("cherry", 5);
+    map.put("date", 1);
+
+    // Key값으로 정렬 (TreeMap 사용)
+    Map<String, Integer> treemap = new TreeMap<>(map);
+
+    /* 내림차순 정렬 */
+    Map<String, Integer> treemap = new TreeMap<>(Collections.reverseOrder());
+    treemap.putAll(map);
+    ```
+
+    * **keySet** : map의 keySet을 list로 변환 후 정렬
+        ```java
+            List<String> keySet = new ArrayList<>(map.keySet());	// map의 keySet()을 list로
+            
+            Collections.sort(keySet);	// 오름차순 정렬
+            Collections.reverse(keySet); 	// 내림차순 정렬
+        ```
+
+    * **stream**
+        ```java
+        // 오름차순
+        map.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey())   
+                .forEach(System.out::println);
+
+        // 내림차순
+        map.entrySet().stream()
+                .sorted(Map.Entry.<String, Integer>comparingByKey().reversed())
+                .forEach(System.out::println);
+
+        ```
 
 * value 기준 정렬
+    * **entry**
+        ```java
+        List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
 
-compareTo vs compare override, 
+        Collections.sort(list, (a, b) -> a.getValue() - b.getValue());
+
+        // 내림차순
+        Collections.sort(list, (a, b) -> b.getValue() - a.getValue());
+
+        // compareTo
+        Collections.sort(list, (a, b) -> b.getValue().compareTo(a.getValue()));
+        ```
+
+    * **comparator**: map의 keySet을 list로 변환 후 정렬
+        ```java
+            List<String> list = new ArrayList<>(map.keySet());
+
+            keySet.sort(new Comparator<String>(){
+                @Override
+                public int compare(String s1, String s2){
+                    return map.get(s1) - map.get(s2);       // 오름차순 정렬
+                    return map.get(s2) - map.get(s1);       // 내림차순 정렬
+                }
+            })
+        ```
+
+    * 람다식
+    ```java
+        // 내림차순 정렬
+        keySet.sort((o1, o2) -> map.get(o2).compareTo(map.get(o1)));
+    ```
+
+#### compareTo vs compare override
+
+| 비교 형태           | 사용 구문               | 예시                            |
+| --------------- | ------------------- | ----------------------------- |
+| `compare(a, b)` | Comparator 구현 시 사용  | `return b - a`                |
+| `compareTo(b)`  | Comparable 구현 객체 비교 | `"apple".compareTo("banana")` |
+
+
 
 ### 요약
 
