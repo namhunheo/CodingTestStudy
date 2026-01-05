@@ -27,7 +27,7 @@ public class Main {
         // 오름차순 정렬 필수
         Arrays.sort(arr);
 
-        // 배열 순회하면서 좋은 수인지 판단
+        // 배열 순회하면서 좋은 수인지 판단(음수)
         for(int i = 0; i < N; i++){
             int target = arr[i];
             int start = 0;
@@ -58,5 +58,8 @@ public class Main {
 
         return;
     }
-
+    private int factorial(int num  ){
+        if( num == 1) return 1;
+        return num * factorial(num-1);
+    }
 }

@@ -9,13 +9,12 @@ class Solution {
             stringArr[i]= String.valueOf(numbers[i]);
         }
                
-              //CompareTo+ 람다식 사용
+        //CompareTo+ 람다식 사용
         // ?????????????????왜 뒤집히지...?
         //(a+b).compareTo(b+a) => a 가 b보다 작으면 a를 앞으로 둔다 즉 반대로
-        Arrays.sort(stringArr,(a,b)->(b+a).compareTo(a+b)      );
+        Arrays.sort(stringArr,(a,b)->(b+a).compareTo(a+b));
         StringBuilder sb= new StringBuilder();
-        
-        
+               
         boolean check0=false;
         for (int i=0; i<stringArr.length; i++){
             if(check0==false)
