@@ -1,5 +1,5 @@
-package Math;
-
+package studycodingtest.Math;
+/*
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,6 +19,7 @@ import java.util.StringTokenizer;
     2. DFS 등에서 재귀적 호출을 통해 너무 많은 함수들을 호출한 경우
     일단 둘 둥 나는 뭐해 해당하는지 모르겟음.....ㅠ
  */
+/*
 public class BOJ_GreatestCmmonDivisor  {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -27,8 +28,11 @@ public class BOJ_GreatestCmmonDivisor  {
         long a = Long.parseLong(st.nextToken());
         long b = Long.parseLong(st.nextToken());
 
+
+        // 실제 숫자를 만든다. => 공간복잡도에 맞지 않아. 2^26이므로
         // a 1로 채워
         StringBuilder sbA = new StringBuilder();
+        // for문에서 메모리 초과
         for (int i = 0; i < a; i++) {
             sbA.append('1');
         }
@@ -39,12 +43,51 @@ public class BOJ_GreatestCmmonDivisor  {
             sbB.append('1');
         }
 
-        // 값을 받아주고
         BigInteger A = new BigInteger(sbA.toString());
         BigInteger B = new BigInteger(sbB.toString());
 
-        // gcd 로 최대 공약수
         BigInteger gcd = A.gcd(B);
         System.out.println(gcd.toString());
+    }
+}
+*/
+
+// a,b 를 각각 1의 개수
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class BOJ_GreatestCmmonDivisor {
+
+    // gcd 메서드 사용
+    static long gcd(long a, long b) {
+        while (b != 0) {
+            long r = a % b;
+            a = b;
+            b = r;
+        }
+        return a;
+    }
+
+    public static void main(String[] args) throws IOException {
+        // 입력 처리 받고
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        long a = Long.parseLong(st.nextToken());
+        long b = Long.parseLong(st.nextToken());
+
+        // g에 결과 숫자의 길이 해주고
+        long g = gcd(a, b);
+
+        // 1을 g 번 반복 해서 만들어준다.
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < g; i++) {
+            sb.append('1');
+        }
+
+        System.out.println(sb);
     }
 }
