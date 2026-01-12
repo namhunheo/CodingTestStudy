@@ -44,6 +44,8 @@
 | Week 03</br>(25.12.17.수) | ✅ | ✅ | ✅ | ✅ |✅ | | |
 | Week 04</br>(25.12.29.월) | ✅ | ✅ | ✅ | ✅ |✅ | | |
 | Week 05</br>(26.01.05.월) | ✅ | ✅ | ✅ | ✅ |✅ | | |
+| Week 06</br>(26.01.12.월) | ✅ |  | ✅ | ✅ |✅ | | |
+| Week 07</br>(26.01.15.목) | |  | |  | | | |
 
 
 | 문제 | 예진 | 채원 | 성준 | 훈주 | 의선| 선우 | 남훈 |
@@ -63,6 +65,9 @@
 | BFS<br>2 문제 | ✔️   |  ✔️  | ✔️  | ✔️  |  ✔️    | | |
 | 이진탐색<br>3 문제 | 2️⃣   |  2️⃣ | 2️⃣ |  ✔️ |  2️⃣  | | |
 | 다익스트라<br>2 문제 | 1️⃣  |  1️⃣ | 1️⃣  |   |      | | |
+| 트리<br>1 문제 | ✔️  |   | ✔️  | ✔️  |  ✔️  | | |
+| 동적계획법<br>1 문제 | ✔️  |   | ✔️  | ✔️  |      | | |
+| 백트래킹<br>1 문제 | ✔️  |   |   | ✔️  |      | | |
 
 ## 🔸스터디 규칙
 
@@ -503,37 +508,37 @@ Yejin / 코테를 위한 알고리즘 / 그리디 / 5문제
      <td align="center">
       <a href="https://github.com/1004Jumto">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/3929ae8a-e024-4239-ac94-d952459e6667" /><br />
-        <sub><b>예진</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>예진</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/lcw-l-c-w">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/30bdd0aa-c60d-4d69-8d01-58a10a7b49b4" /><br />
-        <sub><b>채원</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>채원</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/SSjunn">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/2294540a-8fd3-405c-8c6b-6397b17e5672" /><br />
-        <sub><b>성준</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>성준</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td> 
     <td align="center">
       <a href="https://github.com/baiees">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/60ce9e04-58c9-441b-b5ce-bb0808e3714b" /><br />
-        <sub><b>훈주</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>훈주</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/euiseon5895">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/95757f6c-d0ef-46c1-92d0-6bfab2f9f30e" /> <br />
-        <sub><b>의선</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>의선</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/sunwookim9537">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/63537b70-b64b-4b1c-90af-305960147039" /> <br />
-        <sub><b>선우</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>선우</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td>
     <td align="center">
       <a href="https://github.com/namhunheo">
         <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/67a6fa9c-87c4-4789-a51e-45091226774e" /> <br />
-        <sub><b>남훈</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50"/></a><br />
+        <sub><b>남훈</b></sub><br><img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/55"/></a><br />
     </td>
   </tr>
 </table>  
