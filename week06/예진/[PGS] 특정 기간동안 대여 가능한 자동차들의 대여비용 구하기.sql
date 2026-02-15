@@ -1,0 +1,20 @@
+SELECT *
+FROM (
+    SELECT
+           cc.CAR_ID,
+         , cc.CAR_TYPE,
+         , ROUND(cc.DAILY_FEE * (1 - cp.DISCOUNT_RATE * 0.01) * 30) AS FEE
+      FROM CAR_RENTAL_COMPANY_CAR cc
+      JOIN CAR_RENTAL_COMPANY_DISCOUNT_PLAN cp
+        ON cp.CAR_TYPE = cc.CAR_TYPE
+       AND cp.DURATION_TYPE = '30일 이상'
+     WHERE NOT EXISTS (
+        SELECT 1
+          FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY h
+         WHERE h.CAR_ID = cc.CAR_ID
+           AND h.START_DATE < DATE '2022-12-01'
+           AND h.END_DATE   >= DATE '2022-11-01'
+    )
+) t
+WHERE t.FEE BETWEEN 500000 AND 2000000
+ORDER BY t.FEE DESC, t.CAR_TYPE, t.CAR_ID DESC;
